@@ -1,0 +1,9 @@
+[book]
+authors = ["Easy"]
+language = "zh-cn"
+multilingual = false
+src = "src"
+title = "方糖全栈路线图"
+
+[build]
+build-dir = "docs"

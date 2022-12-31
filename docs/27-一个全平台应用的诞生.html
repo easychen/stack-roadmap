@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>一个全平台应用的诞生 - 方糖全栈路线图</title>
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">课程介绍</li><li class="chapter-item expanded "><a href="1-每日学习资料内容简介.html"><strong aria-hidden="true">1.</strong> 每日学习资料内容简介</a></li><li class="chapter-item expanded "><a href="2-计算机早期历史.html"><strong aria-hidden="true">2.</strong> 计算机早期历史</a></li><li class="chapter-item expanded "><a href="3-电子计算机的发展史.html"><strong aria-hidden="true">3.</strong> 电子计算机的发展史</a></li><li class="chapter-item expanded "><a href="4-布尔逻辑与逻辑门.html"><strong aria-hidden="true">4.</strong> 布尔逻辑与逻辑门</a></li><li class="chapter-item expanded "><a href="5-二进制.html"><strong aria-hidden="true">5.</strong> 二进制</a></li><li class="chapter-item expanded "><a href="6-算术逻辑单元（ALU）.html"><strong aria-hidden="true">6.</strong> 算术逻辑单元（ALU）</a></li><li class="chapter-item expanded "><a href="7-寄存器和内存.html"><strong aria-hidden="true">7.</strong> 寄存器和内存</a></li><li class="chapter-item expanded "><a href="8-中央处理器（CPU）.html"><strong aria-hidden="true">8.</strong> 中央处理器（CPU）</a></li><li class="chapter-item expanded "><a href="9-指令和程序.html"><strong aria-hidden="true">9.</strong> 指令和程序</a></li><li class="chapter-item expanded "><a href="10-CPU进阶.html"><strong aria-hidden="true">10.</strong> CPU进阶</a></li><li class="chapter-item expanded "><a href="11-早期计算机编程方式.html"><strong aria-hidden="true">11.</strong> 早期计算机编程方式</a></li><li class="chapter-item expanded "><a href="12-编程语言发展史.html"><strong aria-hidden="true">12.</strong> 编程语言发展史</a></li><li class="chapter-item expanded "><a href="13-编程基础-语句和函数.html"><strong aria-hidden="true">13.</strong> 编程基础-语句和函数</a></li><li class="chapter-item expanded "><a href="14-算法入门.html"><strong aria-hidden="true">14.</strong> 算法入门</a></li><li class="chapter-item expanded "><a href="15-数据结构.html"><strong aria-hidden="true">15.</strong> 数据结构</a></li><li class="chapter-item expanded "><a href="16-软件工程.html"><strong aria-hidden="true">16.</strong> 软件工程</a></li><li class="chapter-item expanded "><a href="17-集成电路与摩尔定律.html"><strong aria-hidden="true">17.</strong> 集成电路与摩尔定律</a></li><li class="chapter-item expanded "><a href="18-操作系统.html"><strong aria-hidden="true">18.</strong> 操作系统</a></li><li class="chapter-item expanded "><a href="19-内存和储存介质.html"><strong aria-hidden="true">19.</strong> 内存和储存介质</a></li><li class="chapter-item expanded "><a href="20-文件系统.html"><strong aria-hidden="true">20.</strong> 文件系统</a></li><li class="chapter-item expanded "><a href="21-命令行界面.html"><strong aria-hidden="true">21.</strong> 命令行界面</a></li><li class="chapter-item expanded "><a href="22-计算机网络.html"><strong aria-hidden="true">22.</strong> 计算机网络</a></li><li class="chapter-item expanded "><a href="23-互联网.html"><strong aria-hidden="true">23.</strong> 互联网</a></li><li class="chapter-item expanded "><a href="24-万维网.html"><strong aria-hidden="true">24.</strong> 万维网</a></li><li class="chapter-item expanded "><a href="25-电影：网络战士.html"><strong aria-hidden="true">25.</strong> 电影：网络战士</a></li><li class="chapter-item expanded "><a href="26-软件思维和软件的分类.html"><strong aria-hidden="true">26.</strong> 软件思维和软件的分类</a></li><li class="chapter-item expanded "><a href="27-一个全平台应用的诞生.html" class="active"><strong aria-hidden="true">27.</strong> 一个全平台应用的诞生</a></li><li class="chapter-item expanded "><a href="28-精益流程.html"><strong aria-hidden="true">28.</strong> 精益流程</a></li><li class="chapter-item expanded "><a href="29-福利单词项目简介.html"><strong aria-hidden="true">29.</strong> 福利单词项目简介</a></li><li class="chapter-item expanded "><a href="30-商业模式画布.html"><strong aria-hidden="true">30.</strong> 商业模式画布</a></li><li class="chapter-item expanded "><a href="31-用户画像.html"><strong aria-hidden="true">31.</strong> 用户画像</a></li><li class="chapter-item expanded "><a href="32-画像→场景→功能和分期.html"><strong aria-hidden="true">32.</strong> 画像→场景→功能和分期</a></li><li class="chapter-item expanded "><a href="33-什么是好的商业设计.html"><strong aria-hidden="true">33.</strong> 什么是好的商业设计</a></li><li class="chapter-item expanded "><a href="34-人人能用的四大原则.html"><strong aria-hidden="true">34.</strong> 人人能用的四大原则</a></li><li class="chapter-item expanded "><a href="35-通过购买、组合、上色设计独创Logo.html"><strong aria-hidden="true">35.</strong> 通过购买、组合、上色设计独创Logo</a></li><li class="chapter-item expanded "><a href="36-使用AdobeXd设计界面.html"><strong aria-hidden="true">36.</strong> 使用AdobeXd设计界面</a></li><li class="chapter-item expanded "><a href="37-个人支付解决方案.html"><strong aria-hidden="true">37.</strong> 个人支付解决方案</a></li><li class="chapter-item expanded "><a href="38-使用「兔小巢」处理用户反馈.html"><strong aria-hidden="true">38.</strong> 使用「兔小巢」处理用户反馈</a></li><li class="chapter-item expanded "><a href="39-AARRR漏斗和增长优化.html"><strong aria-hidden="true">39.</strong> AARRR漏斗和增长优化</a></li><li class="chapter-item expanded "><a href="40-概览部分小结.html"><strong aria-hidden="true">40.</strong> 概览部分小结</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">方糖全栈路线图</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="一个全平台应用的诞生"><a class="header" href="#一个全平台应用的诞生">一个全平台应用的诞生</a></h1>
+<p>今天我们通过一个简单的Todo项目来看一下基于Web开发的全平台应用的全过程。主要目的是为大家建立全局视野，可能会遇到一些听不懂的技术名词，不懂没关系，先接着看下去，感受整个过程就对了。后边会把这些知识点补充起来的。</p>
+<p><img src="images/s4_data.003.png" alt="" />
+Time Todo是我开发的一个Todo工具。它既有电脑客户端、又有网页版和移动版。还可以通过Web Hook进行Todo数据同步和生成日报等工作，主体应用从想法到完成只用了一个周末。</p>
+<p><img src="images/s4_data.004.png" alt="" />
+下边我们就从想法讲起。之所以想开发这么一个应用，主要还是来自于日常的需求。
+我是一个非常喜欢用Todo的人，这可能是因为我记性不太好。但是市面上的Todo应用并不是为一个重度迷糊症患者设计的。</p>
+<p>第一，大部分的Todo电脑客户端是不支持一直浮动在顶层的。这让我很诧异，因为浮动在顶层很重要。如果Todo不能一直在最上边，那么它被遮挡后，我很可能会忘掉还有这个东西。
+第二，大部分的Todo应用只有「待完成」和「已经完成」状态，没有「正在进行中」。
+这样当我被电话打断后再回到工作状态时，就需要从一堆Todo里去找正在做的事情。</p>
+<p><img src="images/s4_data.005.png" alt="" />
+如果你是一个普通用户，那么只能到处去找现成的解决方案。比如Mac系统的便签在一定程度上符合了这个需求，它能浮动在顶层、也能透明，但它毕竟不是一个Todo应用，不能很便捷的划掉其中一项。当你拥有编程能力以后，就会多出来一个选择，那就是自己写。自己写的应用能完全符合自己的需求，让你的工作和生活会更加的完美。而不是活在一个「又不是不能用」的世界里。</p>
+<p><img src="images/s4_data.006.png" alt="" />
+那么既然决定做了，我们就需要梳理一下之前的需求。</p>
+<p>首先它得是一个Todo，可以添加，可以划掉的那种。
+然后它需要支持顶层浮动、可以半透明。
+同时，它可以高亮当前正在处理的那一条Todo。</p>
+<p>这里问题就来了，怎么才能知道当前在处理哪条呢？
+我们用个土方法，就是手工点。开始任务的时候点一下，结束的时候点一下。</p>
+<p>这样比较准确，而且有意思的是，它还带来了一个附加价值，那就是计时。
+之前在公司经常会被要求需要写日报周报，每项任务会要求写开发时间。这种场景下计时功能就很实用了。</p>
+<p><img src="images/s4_data.007.png" alt="" />
+然后我们需要给这个应用一个鲜明的定位。一般在大公司做开发时不会遇到这类任务，但在独立开发中，这个定位甚至可能决定它的下载量。
+现在Todo应用已经非常多了，可能是因为写起来很简单，那些前端框架都用Todo做Demo，简直就是框架界的「Hello World」了。
+所以我们需要突出这个应用与众不同的地方。</p>
+<p>回顾一下我们的核心需求点，计时是一个亮点，可以用来重点突出下。最简单又最有效的方式就是把这个亮点弄到名字里边。
+它是一个可以计时的Todo。我们简单的把「时间」和「Todo」合到一起，就是「Time Todo」。</p>
+<p><img src="images/s4_data.008.png" alt="" />
+下边我们来进一步设计一下这个品牌。</p>
+<p><img src="images/s4_data.009.png" alt="" />
+我一般喜欢从Logo开始设计。从之前的思路往下走，我们做的是融合了「时间」和「Todo」的产品。它的图标应该是什么样子呢？让我们到图标网站thenounproject.com去寻找下灵感，分别输入time和todo，看看对应的图案都有哪些。</p>
+<p><img src="images/s4_data.010.png" alt="" />
+我们可以看到，Time的代表图像主要是clock，而Todo的代表图像主要是check box。
+我们的任务就是，设计一个图标，同时包含这两个因素。仔细观察两种图标，我们会发现check box的形状其实和钟表的指针很像。那我们如果把二者给融合起来会是什么效果呢。这时候就需要通过设计工具来测试下我们的想法。</p>
+<p><img src="images/s4_data.011.png" alt="" />
+我最常用的就是Adobe家的Xd。这是一个矢量设计工具，可以同时用来设计Logo和软件界面。拥有Windows和Mac版本，而且是免费的。</p>
+<p><img src="images/s4_data.012.png" alt="" />
+我很喜欢用这个软件，甚至用它临摹过四格漫画里的小人。</p>
+<p><img src="images/s4_data.013.png" alt="" />
+2019年国庆期间做的将PPT直接转为视频的「Slide酱」也是用它画的看板娘。矢量设计软件最方便的地方是，当你修改形状时，描边会随之更新。这样因为手残无法画出准确线条的同学，比如我，只要慢慢调整曲线，总能得到自己想要的图案。</p>
+<p><img src="images/s4_data.014.png" alt="" />
+下边我们简单看下如何用它来设计Logo。画个正方形，拖动角落的小圆圈控制弧度，使其变成圆角。</p>
+<p><img src="images/s4_data.015.png" alt="" />
+填充蓝色，放入小一号的圆角正方形。表盘完成。</p>
+<p><img src="images/s4_data.016.png" alt="" />
+添加指针。采用矩形加半透明，使其同时看起来又像是check box里的勾。</p>
+<p><img src="images/s4_data.017.png" alt="" />
+进一步补充细节，添加时间刻度和品牌标识。</p>
+<p><img src="images/s4_data.018.png" alt="" />
+再优化一下细节。把时间标记和边框整合到一起，让图案更简洁一些。给分针添加残影，表示它在旋转。</p>
+<p><img src="images/s4_data.019.png" alt="" />
+观察以后觉得不够重，于是决定把配色翻转下，同时给蓝底加上渐变，增加层次感。
+这样Logo就设计完了。</p>
+<p><img src="images/s4_data.020.png" alt="" />
+将Logo的风格应用到Todo上边，我们就可以设计出类似这样的原型。</p>
+<p><img src="images/s4_data.021.png" alt="" />
+接下来我们进入开发阶段。首先要开发的是网页版。为什么是网页版。前边也说过，我们采用的技术栈是以Web技术为核心的。先做网页版，然后将网页版打包，就有了电脑和手机客户端。</p>
+<p><img src="images/s4_data.022.png" alt="" />
+复习一下我们之前讲过的B/S联机软件的结构。可以看到在现代浏览器里边，界面、前端逻辑和数据存储都是可以完成的。</p>
+<p><img src="images/s4_data.023.png" alt="" />
+这意味着，其实单机软件能做的事情，浏览器其实也能做。虽然在浏览器里，能调用的接口和能存储的数据都会受到限制，但对于简单的应用已经足够了。</p>
+<p><img src="images/s4_data.024.png" alt="" />
+仔细分析下原型就会发现，其实整个界面挺简单的，它只有三部分。新Todo输入框、Todo列表和已完成Todo列表。</p>
+<p><img src="images/s4_data.025.png" alt="" />
+首先我们会通过HTML，也就是超文本标记语言来构建整个页面的结构。比如通过div图层标签作为容器，通过ul无顺序列表标签来列出Todo项目。</p>
+<p><img src="images/s4_data.026.png" alt="" />
+这就是纯粹通过HTML构造出来的界面。显然这和我们的原型相差甚远。这是因为我们还没有添加样式。</p>
+<p><img src="images/s4_data.027.png" alt="" />
+接下来我们通过CSS，也就是层叠式样式表，来给页面加上样式。CSS主要描述每一个标签应该对应什么样的样式。比如高多少、边框多少、要不要阴影等。</p>
+<p><img src="images/s4_data.028.png" alt="" />
+这是我们添加完样式的效果，和原型已经非常接近了。通过HTML和CSS，我们就完成了界面构成。但是这个界面是没有灵魂的，因为它还不会动。</p>
+<p><img src="images/s4_data.029.png" alt="" />
+这时候我们就需要使用JavaScript语言来描述逻辑。比如当在输入框里边按回车键时，要将内容添加到Todo列表里边去。比如当点击列表项前边的勾型图标时，应该将Todo标记为已完成状态。JavaScript除了能对HTML、CSS进行控制，也可以调用浏览器提供的接口，比如它可以将Todo的内容写入到浏览器的localStorage存储中，这样下次打开这个网页时，上次写的内容还可以显示出来。</p>
+<p><img src="images/s4_data.030.png" alt="" />
+这是我们网页版开发完成后的最终效果。大家可以访问官网上的网页版链接，自己感受下。</p>
+<p><img src="images/s4_data.031.png" alt="" />
+在完成了网页版以后，其实我们的工具已经可以在电脑和手机上使用了。因为它们都有浏览器。而采用Web技术开发的应用，在这些浏览器上都能工作得很好。那为什么还要打包呢？打包是为了提升体验。比如通过浏览器使用，每次都要输入网页或者打开书签；浏览器标签页又很多，经常会不小心关掉。最重要的是，TimeTodo的需求里边，是希望半透明的浮动在顶层。这个功能单纯的调用浏览器接口是做不到。</p>
+<p><img src="images/s4_data.032.png" alt="" />
+这时候，我们就会转向使用混合应用解决方案。比如Electron。
+这种方案的原理其实也很简单。
+首先，你可以认为它提供了一个没有多余界面的浏览器，没有地址栏、没有前进后退、只有一个纯粹的窗体。它可以单独启动。这样从用户角度看，就是一个独立的应用了。只不过说和其他原生应用相比，它只能操作浏览器里边的接口和数据。</p>
+<p>但是这个包在外边的浏览器并不是标准的浏览器，而是Electron自己的浏览器。它定制一些JavaScript可以访问的接口，把它和操作系统接口对接起来。这样这个包在里边的Web应用，也就具备了一些系统级别的能力。</p>
+<p><img src="images/s4_data.033.png" alt="" />
+比如这段JavaScript，它就让我们可以创建一个总是浮动在顶层的透明窗口。</p>
+<p><img src="images/s4_data.034.png" alt="" />
+通过这种方式，我们完成了Mac和Windows版本的开发。它最终看起来像这样子。Linux下因为驱动问题，窗体无法透明。但Linux用户可以直接使用网页版。我们也可以通过类似的方式，用Cordova将网页版打包为iOS和Android应用，这样就覆盖了移动端。</p>
+<p><img src="images/s4_data.035.png" alt="" />
+到现在，我们的全平台应用看起来就开发完了。</p>
+<p><img src="images/s4_data.036.png" alt="" />
+但在实际使用中，我们会发现，各个平台的数据是割裂的。当我们从Mac换到Windows上时，两个应用上的Todo内容是完全不同的。我们需要将数据同步，需要将数据放一份到服务器端，这就是说，它需要从单机软件变成C/S或B/S结构。</p>
+<p><img src="images/s4_data.037.png" alt="" />
+我们最终采用的是这样的结构。首先通过NodeJS或者PHP来实现服务器端的逻辑和存储。
+然后不管是网页版还是客户端版，都以同样的规范和服务器进行通信。因为客户端其实是网页版打包的，所以这一点很容易做到。只要简单的使用Ajax这种基于JavaScript的异步传输技术就可以。</p>
+<p><img src="images/s4_data.038.png" alt="" />
+我们将的输入框重用起来，让它可以输入命令。具体来说，当我们发现Todo的内容是以冒号开头时，我们就认为这是一条命令。当这个命令是save的时候，我们将Todo里列表发送到服务器端，服务器把它存到数据库或者其他存储里。让这个命令是load的时候，服务器查找上次存入的内容，然后返回给客户端，客户端把它更新到本地、也就是浏览器内部的存储里。在Mac上save一下，到Windows上load就可以接着干活了。这样通过输入命令，我们就实现了在多个平台之间的数据同步。</p>
+<p><img src="images/s4_data.039.png" alt="" />
+让我们来回顾一下这个过程。首先我们开发了网页版；然后通过Electron和Cordova打包了电脑客户端和手机客户端；最后通过服务器端实现了网页版和客户端之间的通信。从而实现了一个真正意义上的全平台应用。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="26-软件思维和软件的分类.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="28-精益流程.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="26-软件思维和软件的分类.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="28-精益流程.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
