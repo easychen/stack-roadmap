@@ -28,7 +28,7 @@
 
 本路线图及为知识点整理的相关内容遵循 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh) 协议。
 
-![方糖全栈路线图](./%E6%96%B9%E7%B3%96%E5%85%A8%E6%A0%88%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%BA%90%E6%96%87%E4%BB%B6.jpg)
+![方糖全栈路线图](./%E6%96%B9%E7%B3%96%E5%85%A8%E6%A0%88%E8%B7%AF%E7%BA%BF%E5%9B%BE.jpg)
 
 - [PDF](./%E6%96%B9%E7%B3%96%E5%85%A8%E6%A0%88%E8%B7%AF%E7%BA%BF%E5%9B%BE.drawio.pdf)
 - [源文件](./%E6%96%B9%E7%B3%96%E5%85%A8%E6%A0%88%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%BA%90%E6%96%87%E4%BB%B6.drawio)
